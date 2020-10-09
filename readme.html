@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DEV Job Interview Test | Spreadshirt</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.2;
+		}
+
+		.container {
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
+
+		li {
+			margin: 0 0 10px 0;
+		}
+
+		ul ul {
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Job Interview Task</h1>
+	<p>To show us your skills and how you work with HTML, CSS and JavaScript, we want you to build a small landing page for spreadshirt.com. You will find 2 screens in the ZIP-file that illustrate how the page should look like on desktop and mobile. Please keep it simple and <strong>don't spend more than 4-5 hours</strong>.</p>
+	<p>If you feel the layout takes too much of your time leave some stuff out at the end and concentrate on the product slider</p>
+	<p>Things we want you to utilize/keep in mind:</p>
+	<ul>
+		<li>Make use of HTML5 and CSS3 feature (e.g. picture-element, flexbox)</li>
+		<li>If you know SASS please show us</li>
+		<li>Make sure the page works with 360px width for mobile phones</li>
+		<li>Just use base fonts like Arial for everything</li>
+		<li>Don't copy the text manually from the images. Just use placeholder text</li>
+		<li>Upon page load dynamically create a slider showing <strong>5 articles</strong> with JavaScript:</li>
+		<ul>
+			<li>Use <a href="http://idangero.us/swiper/" target="_blank">Swiper-Slider</a> for the product carousel in the middle of the page (<a href="http://idangero.us/swiper/api/">API Reference</a>). Set it to show only 2 items on mobile and then gradually increase the number of items until 5 are displayed on desktop. (you can just leave out the arrows or use default ones from swiper)</li>
+			<li>For the products in the slider please use <a href="https://www.spreadshirt.com/shopData/list?query=K118614&locale=us_US" target="_blank">this API</a> and pull the <strong>name</strong>, <strong>price</strong> and <strong>productId</strong></li>
+			<li>the <strong>productId</strong> from the API can be used to display the image like so:<br>https://image.spreadshirtmedia.com/image-server/v1/mp/products/<strong>productId</strong>/views/1,width=378,height=378,backgroundColor=F2F2F2</li>
+			<li>there may be images that don't work because they need special parameters. just use a different article then.</li>
+			<li>the API may output different products than on the mockup. don't worry about that.</li>
+		</ul>
+		<li>Use vanilla JavaScript (no jQuery, React, Vue, etc.)</li>
+		<li>Browser-Support:
+			<ul>
+				<li>Safari 10.1+ (if you can't test it because you're on Windows ignore it)</li>
+				<li>Google Chrome 66+</li>
+				<li>Mozilla Firefox	60+</li>
+				<li>Internet Explorer 11 (if you can't test it because you're on Mac ignore it)</li>
+				<li>Microsoft Edge 16+ (if you can't test it because you're on Mac ignore it)</li>
+			</ul>
+		</li>
+	</ul>
+	<h2>Images</h2>
+	<a href="https://image.spreadshirtmedia.net/content/f_auto,q_50/x_550,w_1920,h_600,c_crop/v27/cms/ml/teaser/Teaser_after_winter_Shirt_EN" target="_blank">Teaser Desktop</a><br>
+	<a href="https://image.spreadshirtmedia.net/content/f_auto,q_50/w_1920,h_600,c_crop/w_1000/v27/cms/ml/teaser/Teaser_after_winter_Shirt_EN" target="_blank">Teaser Mobile</a><br>
+	<a href="https://image.spreadshirtmedia.net/content/q_60,f_auto/h_0.6,w_1.0,c_crop,g_north,b_rgb:f2f2f2/h_250/v27/cms/ml/tiles/models/shirts-men_en" target="_blank">Model Men</a><br>
+	<a href="https://image.spreadshirtmedia.net/content/q_60,f_auto/h_0.6,w_1.0,c_crop,g_north,b_rgb:f2f2f2/h_250/v27/cms/ml/tiles/models/shirts-women_en" target="_blank">Model Women</a><br>
+	<a href="https://image.spreadshirtmedia.net/content/q_60,f_auto/h_0.6,w_1.0,c_crop,g_north,b_rgb:f2f2f2/h_250/v27/cms/ml/tiles/models/shirts-kids_en" target="_blank">Model Kids</a><br>
+	<a href="https://image.spreadshirtmedia.net/content/q_60,f_auto,w_752/v27/cms/ml/howTo/step-04_monitor-shirts-uk" target="_blank">How To Monitor</a><br>
+	<a href="https://image.spreadshirtmedia.net/content/q_60,f_auto,w_200/v27/cms/ml/howTo/step-04-mobile-t-shirts-uk" target="_blank">How To Phone</a><br>
+	<p>SVG icons are in the zip-file</p>
+	<p>The links don't need file extension. Our image server automatically serves the best image format depending on what the browser supports</p>
+</div>
+</body>
+</html>
