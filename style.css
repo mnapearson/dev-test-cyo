@@ -1,0 +1,43 @@
+* {
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.header-box {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  width: 20%;
+  height: 100%;
+  background: rgba(253, 252, 252, 0.95);
+  padding: 3rem 1rem;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-top: 1rem;
+}
+
+button {
+  margin: 1rem;
+  background-color: teal;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  color: white;
+}
