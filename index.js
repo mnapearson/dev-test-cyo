@@ -3,7 +3,7 @@ var mySwiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   loop: false,
   slidesPerView: 5,
-  spaceBetween: 1,
+ 
 
   // Navigation arrows
   navigation: {
