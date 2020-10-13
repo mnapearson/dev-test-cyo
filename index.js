@@ -2,7 +2,6 @@ var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
-  slidesPerView: 5,
 
   breakpoints: {
     // when window width is >= 320px
