@@ -10,7 +10,13 @@
   }
 
   .mobile-teaser {
-    display: unset;
+    display: block;
+    height: 20rem;
+  }
+
+  .mobile-teaser img {
+    object-fit: cover;
+    height: 100%;
   }
 
   .header-box {
@@ -85,7 +91,8 @@
   }
 
   .mobile-image {
-    display: unset;
+    display: block;
+    margin: 0 auto;
   }
 
   .how-to-middle {
@@ -102,20 +109,24 @@
   }
 
   footer {
-    display: flex;
     flex-direction: column;
     width: 100%;
     align-content: left;
     margin: 0 0 3rem 0;
   }
 
-  .footer {
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-column {
     margin-left: 1rem;
   }
 
   footer h2 {
     margin-top: 2rem;
-    visibility: visible;
+    display: unset;
     text-align: left;
   }
 }
