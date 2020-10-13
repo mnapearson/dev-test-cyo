@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 975px) {
   section {
     margin: 2rem 0.5rem;
     display: flex;
@@ -94,7 +94,7 @@
     flex-direction: column;
   }
 
-  .how-to-right {
+  .how-to-list {
     width: 100%;
     margin-top: 1rem;
     align-content: left;
