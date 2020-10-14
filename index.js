@@ -1,4 +1,10 @@
+const url =
+  "https://www.spreadshirt.com/shopData/list?query=K118614&locale=us_US";
+
+const swiperWrapper = document.getElementById("swiper-wrapper");
+
 const mySwiper = new Swiper(".swiper-container", {
+  init: true,
   direction: "horizontal",
   loop: true,
 
@@ -7,11 +13,11 @@ const mySwiper = new Swiper(".swiper-container", {
       slidesPerView: 2,
     },
 
-    520: {
+    550: {
       slidesPerView: 3,
     },
 
-    680: {
+    700: {
       slidesPerView: 4,
     },
 
@@ -25,11 +31,6 @@ const mySwiper = new Swiper(".swiper-container", {
     prevEl: ".swiper-button-prev",
   },
 });
-
-const url =
-  "https://www.spreadshirt.com/shopData/list?query=K118614&locale=us_US";
-
-const swiperWrapper = document.getElementById("swiper-wrapper");
 
 fetch(url)
   .then((response) => {
@@ -55,5 +56,6 @@ fetch(url)
       slide.appendChild(h1);
       slide.appendChild(p);
       swiperWrapper.appendChild(slide);
+      mySwiper.update();
     });
   });
